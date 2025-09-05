@@ -1,0 +1,28 @@
+{
+  "name": "pogly-twitch-bot-poc",
+  "version": "1.0.0",
+  "description": "A Twitch chat bot PoC for Pogly integration",
+  "main": "index.js",
+  "scripts": {
+    "start_bot": "tsc && ts-add-js-extension --dir=dist && node ./dist/index.js",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "js-extensions": "ts-add-js-extension --dir=dist"
+  },
+  "author": "Dynny",
+  "license": "ISC",
+  "dependencies": {
+    "@clockworklabs/spacetimedb-sdk": "^0.11.1",
+    "@types/node": "^22.10.0",
+    "dotenv": "^16.4.5",
+    "tmi.js": "^1.8.5",
+    "ts-add-js-extension": "^1.6.5",
+    "tslint": "^6.1.3",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/tmi.js": "^1.8.6",
+    "@types/ws": "^8.5.13"
+  },
+  "type": "module"
+}
